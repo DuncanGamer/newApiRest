@@ -8,5 +8,25 @@
 </head>
 <body>
    <h1>Todos los usuarios</h1> 
+
+<table>
+   <tr>
+    <td>ID</td>
+    <td>Nombre</td>
+    <td>Edad</td>
+</tr>
+</table>
+
+<table>
+    <%users.forEach((user) => {%>
+        <tr>
+            <td><%=user.id%></td>
+            <td><%=user.name%></td>
+            <td><%=user.age%></td>
+        </tr>
+    <%})%>
+    </table>
+    
+
 </body>
 </html>

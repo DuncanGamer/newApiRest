@@ -4,11 +4,19 @@ const userController = require('../controllers/users');
 //rutas
 router.get ('/all', userController.getUsers);
 
-router.get ('/create', userController.createUser);
+router.get ('/create', userController.getcreateUser);
 
-router.get ('/update', userController.updateUser);
+router.get ('/update', userController.getupdateUser);
 
-router.get ('/delete', userController.deleteUser);
+router.get ('/delete', userController.getdeleteUser);
+
+router.post ('/create', userController.createUser);
+
+router.put ('/update/:id', userController.updateUser);
+
+router.delete ('/delete/:id', userController.deleteUser);
+
+
 
 
 module.exports = router;
